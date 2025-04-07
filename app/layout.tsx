@@ -7,6 +7,7 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
+import { PageLoader } from "@/components/page-loader"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -36,6 +37,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <PageLoader>
           <div className="flex flex-col min-h-screen">
             <Header navLinks={navLinks} />
             <main className="flex-1">{children}</main>
@@ -175,11 +177,9 @@ export default function RootLayout({
               </div>
             </footer>
           </div>
+          </PageLoader>
         </ThemeProvider>
       </body>
     </html>
   )
 }
-
-import "./globals.css"
-
