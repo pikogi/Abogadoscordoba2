@@ -35,15 +35,14 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row mt-12 sm:space-x-6 space-y-4 sm:space-y-0 sm:pt-8">
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/60">
-                <Link href="#categories">Nuestros Servicios</Link>
-              </Button>
-              <Button
-                asChild size="lg" className="bg-white text-primary hover:bg-white/60">
-                <Link href="https://wa.me/5493517410304" target="_blank" rel="noopener noreferrer">
-                  Contactar por WhatsApp
-                </Link>
-              </Button>
+            <Button asChild size="lg" className="bg-white text-[#433E3F] hover:bg-white/60">
+            <Link href="#categories">Nuestros Servicios</Link>
+            </Button>
+            <Button asChild size="lg" className="bg-white text-[#433E3F] hover:bg-white/60">
+             <Link href="https://wa.me/5493517410304" target="_blank" rel="noopener noreferrer">
+              Contactar por WhatsApp
+            </Link>
+            </Button>
             </div>
           </div>
         </div>
@@ -57,8 +56,8 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Áreas de Práctica</h2>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+              <h2 className="text-3xl text-[#433E3F] font-bold tracking-tighter sm:text-4xl md:text-5xl">Áreas de Práctica</h2>
+              <p className="mx-auto max-w-[700px] text-[#433E3F]  md:text-xl">
                 Explore nuestras áreas de especialización y descubra cómo podemos ayudarle con sus necesidades legales.
               </p>
             </div>
@@ -66,21 +65,33 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 w-full max-w-5xl">
               <CategoryCard
                 title="Derecho Civil"
-                description="Asuntos familiares, propiedades, contratos y más"
+                description="Accidentes de tránsito, declaratorias de herederos, contratos y más"
                 href="/categorias/civil"
                 icon="scale"
               />
               <CategoryCard
                 title="Derecho Laboral"
-                description="Relaciones laborales, despidos, compensaciones"
+                description="Relaciones laborales, despidos, compensaciones."
                 href="/categorias/laboral"
                 icon="briefcase"
               />
               <CategoryCard
                 title="Derecho Societario"
-                description="Constitución de empresas, fusiones, adquisiciones"
+                description="Constitución de sociedades, fusiones, adquisiciones."
                 href="/categorias/societario"
                 icon="building"
+              />
+              <CategoryCard
+                title="Derecho Familia"
+                description="Divorcio, Cuota alimentaria, Régimen de comunicación."
+                href="/categorias/societario"
+                icon="family"
+              />
+               <CategoryCard
+                title="Derecho Previsional"
+                description="Constitución de sociedades, fusiones, adquisiciones."
+                href="/categorias/societario"
+                icon="pension"
               />
             </div>
           </div>
@@ -92,10 +103,10 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-3xl text-[#433E3F] font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 ¿Necesita Asesoramiento Legal?
               </h2>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+              <p className="mx-auto max-w-[700px] md:text-xl text-[#433E3F]">
                 Nuestro equipo de abogados expertos está listo para ayudarle. Contáctenos hoy para una consulta inicial.
               </p>
             </div>
@@ -113,8 +124,8 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Lo Que Dicen Nuestros Clientes</h2>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-[#433E3F]">Lo Que Dicen Nuestros Clientes</h2>
+              <p className="mx-auto max-w-[700px] md:text-xl text-[#433E3F]">
                 Testimonios de clientes satisfechos con nuestros servicios legales.
               </p>
             </div>
@@ -133,18 +144,18 @@ export default function Home() {
                           height="24"
                           viewBox="0 0 24 24"
                           fill="currentColor"
-                          className="text-primary h-5 w-5"
+                          className="text-yellow-600 h-5 w-5"
                         >
                           <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                         </svg>
                       ))}
                   </div>
-                  <p className="text-muted-foreground italic mb-4">
+                  <p className="italic mb-4 text-[#433E3F]">
                     "El equipo de abogados resolvió mi caso con profesionalismo y dedicación. Altamente recomendados."
                   </p>
                   <div className="mt-auto">
-                    <p className="font-semibold">Cliente Satisfecho {i}</p>
-                    <p className="text-sm text-muted-foreground">Caso de Derecho Civil</p>
+                    <p className="font-semibold text-[#433E3F]">Cliente Satisfecho {i}</p>
+                    <p className="text-sm text-yellow-600">Caso de Derecho Civil</p>
                   </div>
                 </div>
               ))}
