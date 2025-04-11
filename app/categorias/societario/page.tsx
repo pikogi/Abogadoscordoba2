@@ -31,25 +31,48 @@ export default function CorporateLawPage() {
       ],
     },
     {
-      id: "fusiones",
-      title: "Fusiones y Adquisiciones",
+      id: "Registro de Marca",
+      title: "Registro de marcas",
       description: "Asesoramiento legal en procesos de fusión, adquisición, escisión y reestructuración empresarial.",
       image: "/placeholder.svg?height=200&width=300",
       faqs: [
         {
-          question: "¿Cuáles son las etapas de una fusión o adquisición?",
+          question: "¿Cómo puedo proteger la marca de mi empresa?",
           answer:
-            "El proceso incluye: valoración inicial, carta de intenciones, due diligence, negociación del contrato, cierre de la operación e integración post-fusión.",
+            "La protección se obtiene mediante el registro de la marca en la Oficina de Propiedad Intelectual correspondiente, lo que otorga derechos exclusivos de uso en el territorio registrado.",
         },
         {
-          question: "¿Qué aspectos legales debo considerar en una fusión?",
+          question: "¿Qué diferencia hay entre propiedad intelectual e industrial?",
           answer:
-            "Es importante analizar aspectos laborales, fiscales, contractuales, de propiedad intelectual, competencia, y obtener las autorizaciones regulatorias necesarias.",
+            "La propiedad intelectual protege creaciones del intelecto (obras literarias, artísticas), mientras que la industrial protege invenciones técnicas (patentes), signos distintivos (marcas) y diseños industriales.",
         },
         {
-          question: "¿Cuál es la diferencia entre fusión y adquisición?",
+          question: "¿Por cuánto tiempo está protegida una patente?",
           answer:
-            "En una fusión, dos empresas se unen para formar una nueva entidad, mientras que en una adquisición, una empresa compra a otra y mantiene su identidad, absorbiendo a la empresa adquirida.",
+            "Generalmente, una patente tiene una duración de 20 años desde la fecha de solicitud, siempre que se paguen las tasas de mantenimiento correspondientes.",
+        },
+      ],
+    },
+    {
+      id: "Adquisiciones",
+      title: "Adquisiciones",
+      description: "Protección de marcas, patentes, derechos de autor y secretos comerciales en el ámbito empresarial.",
+      image: "/placeholder.svg?height=200&width=300",
+      faqs: [
+        {
+          question: "¿Cómo puedo proteger la marca de mi empresa?",
+          answer:
+            "La protección se obtiene mediante el registro de la marca en la Oficina de Propiedad Intelectual correspondiente, lo que otorga derechos exclusivos de uso en el territorio registrado.",
+        },
+        {
+          question: "¿Qué diferencia hay entre propiedad intelectual e industrial?",
+          answer:
+            "La propiedad intelectual protege creaciones del intelecto (obras literarias, artísticas), mientras que la industrial protege invenciones técnicas (patentes), signos distintivos (marcas) y diseños industriales.",
+        },
+        {
+          question: "¿Por cuánto tiempo está protegida una patente?",
+          answer:
+            "Generalmente, una patente tiene una duración de 20 años desde la fecha de solicitud, siempre que se paguen las tasas de mantenimiento correspondientes.",
         },
       ],
     },
@@ -74,29 +97,6 @@ export default function CorporateLawPage() {
           question: "¿Cuáles son los riesgos de no formalizar adecuadamente un contrato comercial?",
           answer:
             "Los riesgos incluyen interpretaciones divergentes de los acuerdos, dificultad para exigir el cumplimiento, problemas en la resolución de conflictos y posibles responsabilidades no previstas.",
-        },
-      ],
-    },
-    {
-      id: "propiedad-intelectual",
-      title: "Propiedad Intelectual e Industrial",
-      description: "Protección de marcas, patentes, derechos de autor y secretos comerciales en el ámbito empresarial.",
-      image: "/placeholder.svg?height=200&width=300",
-      faqs: [
-        {
-          question: "¿Cómo puedo proteger la marca de mi empresa?",
-          answer:
-            "La protección se obtiene mediante el registro de la marca en la Oficina de Propiedad Intelectual correspondiente, lo que otorga derechos exclusivos de uso en el territorio registrado.",
-        },
-        {
-          question: "¿Qué diferencia hay entre propiedad intelectual e industrial?",
-          answer:
-            "La propiedad intelectual protege creaciones del intelecto (obras literarias, artísticas), mientras que la industrial protege invenciones técnicas (patentes), signos distintivos (marcas) y diseños industriales.",
-        },
-        {
-          question: "¿Por cuánto tiempo está protegida una patente?",
-          answer:
-            "Generalmente, una patente tiene una duración de 20 años desde la fecha de solicitud, siempre que se paguen las tasas de mantenimiento correspondientes.",
         },
       ],
     },

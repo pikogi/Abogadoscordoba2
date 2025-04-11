@@ -24,9 +24,6 @@ export default function RootLayout({
 }) {
   const navLinks = [
     { href: "/", label: "Inicio" },
-    { href: "/categorias/civil", label: "Derecho Civil" },
-    { href: "/categorias/laboral", label: "Derecho Laboral" },
-    { href: "/categorias/societario", label: "Derecho Societario" },
     { href: "/contacto", label: "Contacto" },
   ]
 
@@ -132,7 +129,7 @@ export default function RootLayout({
                   <div className="space-y-4 md:py-8">
                     <h3 className="text-base font-medium">Contacto</h3>
                     <ul className="space-y-2 text-sm">
-                      <li className="text-muted-foreground">Calle Gran Vía 123, 28013 Madrid, España</li>
+                      <li className="text-muted-foreground">Ayacucho 127, Córdoba Capital.</li>
                       <li>
                         <Link
                           href="https://wa.me/5493517410304"

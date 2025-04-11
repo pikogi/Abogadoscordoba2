@@ -31,7 +31,7 @@ export default function Home() {
                 ABOGADOS CORDOBA
               </h1>
               <p className="mx-auto max-w-[700px] text-lg md:text-xl text-white/90">
-                Expertos en derecho civil, laboral y societario.
+                Expertos en derecho previsional, civil, laboral, Familia y societario.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row mt-12 sm:space-x-6 space-y-4 sm:space-y-0 sm:pt-8">
@@ -56,13 +56,25 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl text-[#433E3F] font-bold tracking-tighter sm:text-4xl md:text-5xl">Áreas de Práctica</h2>
+              <h2 className="text-3xl text-[#433E3F] font-bold tracking-tighter sm:text-4xl md:text-5xl">Nuestros Servicios</h2>
               <p className="mx-auto max-w-[700px] text-[#433E3F]  md:text-xl">
                 Explore nuestras áreas de especialización y descubra cómo podemos ayudarle con sus necesidades legales.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 w-full max-w-5xl">
+            <CategoryCard
+                title="Derecho Previsional"
+                description="Jubilaciones y pensiones."
+                href="/categorias/previsional"
+                icon="pension"
+              />
+            <CategoryCard
+                title="Derecho Familia"
+                description="Divorcio, Cuota alimentaria, Régimen de comunicación."
+                href="/categorias/familia"
+                icon="family"
+              />
               <CategoryCard
                 title="Derecho Civil"
                 description="Accidentes de tránsito, declaratorias de herederos, contratos y más"
@@ -80,18 +92,6 @@ export default function Home() {
                 description="Constitución de sociedades, fusiones, adquisiciones."
                 href="/categorias/societario"
                 icon="building"
-              />
-              <CategoryCard
-                title="Derecho Familia"
-                description="Divorcio, Cuota alimentaria, Régimen de comunicación."
-                href="/categorias/societario"
-                icon="family"
-              />
-               <CategoryCard
-                title="Derecho Previsional"
-                description="Constitución de sociedades, fusiones, adquisiciones."
-                href="/categorias/societario"
-                icon="pension"
               />
             </div>
           </div>

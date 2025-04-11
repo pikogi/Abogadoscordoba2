@@ -75,7 +75,7 @@ function getSubcategories(icon: string): string[] {
     case "briefcase":
       return ["Despidos", "Accidentes laborales", "Negociaciones", "Trabajo en negro"]
     case "building":
-      return ["Constitución de Sociedades", "Registro de marcas", "Adquisiciones", "Contratos Comerciales"]
+      return ["Constitución de Empresas", "Registro de marca", "Adquisiciones", "Contratos Comerciales"]
     case "family":
       return ["Divorcio", "Cuota alimentaria", "Régimen de comunicación"]
     case "pension":

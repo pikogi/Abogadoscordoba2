@@ -4,11 +4,11 @@ import { ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { SubcategoryCard } from "@/components/subcategory-card"
 
-export default function CivilLawPage() {
+export default function FamiliaLawPage() {
   const subcategories = [
     {
-      id: "Accidentes de tránsito",
-      title: "Accidentes de tránsito",
+      id: "divorcios",
+      title: "Divorcios",
       description: "Asesoramiento legal en procesos de divorcio, separación de bienes y custodia de hijos.",
       image: "/placeholder.svg?height=200&width=300",
       faqs: [
@@ -30,8 +30,8 @@ export default function CivilLawPage() {
       ],
     },
     {
-      id: "Declaratoria de herederos",
-      title: "Declaratoria de herederos",
+      id: "Cuota Alimentaria",
+      title: "Cuota Alimentaria",
       description: "Gestión de testamentos, sucesiones y distribución de bienes tras el fallecimiento.",
       image: "/placeholder.svg?height=200&width=300",
       faqs: [
@@ -53,8 +53,8 @@ export default function CivilLawPage() {
       ],
     },
     {
-      id: "Contratos",
-      title: "Contratos",
+      id: "Regimen de Comunicacion",
+      title: "Régimen de Comunicación",
       description: "Redacción, revisión y negociación de contratos entre particulares.",
       image: "/placeholder.svg?height=200&width=300",
       faqs: [
@@ -75,29 +75,6 @@ export default function CivilLawPage() {
         },
       ],
     },
-    {
-      id: "Cobranzas",
-      title: "Cobranzas",
-      description: "Asesoramiento en trámites de jubilación, pensiones y reclamaciones ante la seguridad social.",
-      image: "/placeholder.svg?height=200&width=300",
-      faqs: [
-        {
-          question: "¿Cuáles son los requisitos para jubilarse?",
-          answer:
-            "Generalmente se requiere una edad mínima (entre 60-67 años según el país) y un período mínimo de cotización a la seguridad social.",
-        },
-        {
-          question: "¿Qué hacer si me deniegan la jubilación?",
-          answer:
-            "Puede presentar un recurso administrativo y, si este es denegado, acudir a la vía judicial mediante una demanda contra la entidad de seguridad social.",
-        },
-        {
-          question: "¿Puedo trabajar mientras recibo una pensión?",
-          answer:
-            "Depende del tipo de pensión y la legislación aplicable. En algunos casos es posible, pero puede implicar reducciones en la cuantía de la pensión.",
-        },
-      ],
-    },
   ]
 
   return (
@@ -112,11 +89,11 @@ export default function CivilLawPage() {
                   Inicio
                 </Link>
                 <ChevronRight className="h-4 w-4" />
-                <span>Derecho Civil</span>
+                <span>Derecho Familia</span>
               </div>
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Derecho Civil</h1>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Derecho Familia</h1>
               <p className="mx-auto max-w-[700px] text-lg md:text-xl text-white/90">
-                Nuestro equipo de abogados especialistas en derecho civil le brindará el asesoramiento legal que
+                Nuestro equipo de abogados especialistas en derecho Familia le brindará el asesoramiento legal que
                 necesita para resolver sus asuntos personales y familiares.
               </p>
             </div>
@@ -131,9 +108,9 @@ export default function CivilLawPage() {
       <section className="w-full py-12 md:py-24 bg-background">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Nuestros Servicios de Derecho Civil</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Nuestros Servicios de Derecho Familia</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              Explore nuestras áreas de especialización en derecho civil y descubra cómo podemos ayudarle.
+              Explore nuestras áreas de especialización en derecho familia y descubra cómo podemos ayudarle.
             </p>
           </div>
 
@@ -158,7 +135,7 @@ export default function CivilLawPage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                ¿Necesita Asesoramiento en Derecho Civil?
+                ¿Necesita Asesoramiento en Derecho Familia?
               </h2>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                 Nuestro equipo de abogados expertos está listo para ayudarle. Contáctenos hoy para una consulta inicial.

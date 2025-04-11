@@ -79,8 +79,8 @@ export default function LaborLawPage() {
       ],
     },
     {
-      id: "pensiones",
-      title: "Pensiones Laborales",
+      id: "Trabajo en negro",
+      title: "Trabajo en negro",
       description:
         "Asesoramiento en derechos de pensión, planes de jubilación y reclamaciones ante la seguridad social.",
       image: "/placeholder.svg?height=200&width=300",

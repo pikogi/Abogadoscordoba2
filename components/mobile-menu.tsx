@@ -47,7 +47,7 @@ export function MobileMenu({ links }: MobileMenuProps) {
           <span className="sr-only">Abrir menú</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-[300px] sm:w-[350px] pt-10">
+      <SheetContent side="right" className="w-[400px] sm:w-[450px] pt-10">
         <SheetHeader className="mb-6">
           <SheetTitle className="text-left text-xl">Menú</SheetTitle>
         </SheetHeader>

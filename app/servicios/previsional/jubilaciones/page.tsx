@@ -11,44 +11,45 @@ export default function JubilacionesPage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full min-h-[60vh] py-12 md:py-24 text-white overflow-hidden">
-  {/* Imagen de fondo */}
-  <Image
-    src="/images/jubilados2.jpg"
-    alt="Servicios de jubilaciones"
-    fill
-    className="object-cover z-0"
-    priority
-  />
+        {/* Imagen de fondo */}
+        <Image
+          src="/images/jubilados3.jpg"
+          alt="Servicios de jubilaciones"
+          fill
+          className="object-cover z-0"
+          priority
+        />
 
-  {/* Capa oscura (opcional, para mejorar contraste) */}
-  <div className="absolute inset-0 bg-black/60 z-10" />
+        {/* Capa oscura (opcional, para mejorar contraste) */}
+        <div className="absolute inset-0 bg-black/60 z-10" />
 
-  {/* Contenido */}
-  <div className="relative z-20 container px-4 md:px-8">
-    <div className="flex flex-col items-center space-y-4 text-center">
-      <div className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mt-14">
-          Especialistas en Jubilaciones y Pensiones
-        </h1>
-        <p className="mx-auto max-w-[700px] text-lg md:text-xl text-white/90">
-          Asesoramiento experto en trámites de jubilación, pensiones y reclamaciones ante Anses.
-        </p>
-      </div>
-      <div className="flex flex-col sm:flex-row gap-4">
-        <Button
-          asChild
-          variant="outline"
-          size="lg"
-          className="border-primary text-primary bg-white hover:bg-primary hover:text-white"
-        >
-          <Link href="https://wa.me/5493517410304" target="_blank" rel="noopener noreferrer">
-            Contactar por WhatsApp
-          </Link>
-        </Button>
-      </div>
-    </div>
-  </div>
-</section>
+        {/* Contenido */}
+        <div className="relative z-20 container px-4 md:px-8">
+          <div className="flex flex-col items-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mt-14">
+                Especialistas en Jubilaciones y Pensiones
+              </h1>
+              <p className="mx-auto max-w-[700px] text-lg md:text-xl text-white/90">
+                Asesoramiento experto en trámites de jubilación, pensiones y reclamaciones ante Anses.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-[#433E3F] text-[#433E3F] bg-white hover:bg-green-500 hover:text-white"
+              >
+                <Link href="https://wa.me/5493517410304" target="_blank" rel="noopener noreferrer">
+                <Calendar className="h-4 w-4" />
+                  Contactar por WhatsApp
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Main Content */}
       <section className="w-full py-12 md:py-24 bg-background">
@@ -60,12 +61,7 @@ export default function JubilacionesPage() {
                 <h2 className="text-3xl font-bold tracking-tighter mb-6">Nuestros Servicios de Jubilaciones</h2>
                 <div className="grid gap-6 md:grid-cols-2">
                   <div className="relative aspect-video overflow-hidden rounded-lg">
-                    <Image
-                      src="/images/jubilados1.jpg"
-                      alt="Servicios de jubilaciones"
-                      fill
-                      className="object-cover"
-                    />
+                    <Image src="/images/jubilado3.jpg" alt="Servicios de jubilaciones" fill className="object-cover" />
                   </div>
                   <div className="flex flex-col justify-center">
                     <p className="text-muted-foreground mb-4">
@@ -80,67 +76,12 @@ export default function JubilacionesPage() {
                 </div>
               </div>
 
-              {/* Services List */}
-              <div>
-                <h3 className="text-2xl font-bold mb-6">¿Cómo Podemos Ayudarle?</h3>
-                <div className="grid gap-6 sm:grid-cols-2">
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <FileText className="h-6 w-6 text-primary" />
-                      </div>
-                      <h4 className="text-xl font-bold mb-2">Jubilación Ordinaria</h4>
-                      <p className="text-muted-foreground">
-                        Asesoramiento completo para la solicitud de jubilación ordinaria, calculando la pensión óptima
-                        según su historial laboral.
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <FileText className="h-6 w-6 text-primary" />
-                      </div>
-                      <h4 className="text-xl font-bold mb-2">Jubilación Anticipada</h4>
-                      <p className="text-muted-foreground">
-                        Análisis de su situación para determinar si puede acceder a la jubilación anticipada y en qué
-                        condiciones, minimizando las penalizaciones.
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <FileText className="h-6 w-6 text-primary" />
-                      </div>
-                      <h4 className="text-xl font-bold mb-2">Pensiones de Viudedad</h4>
-                      <p className="text-muted-foreground">
-                        Tramitación de pensiones de viudedad, orfandad y en favor de familiares, asegurando el
-                        reconocimiento de todos sus derechos.
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <FileText className="h-6 w-6 text-primary" />
-                      </div>
-                      <h4 className="text-xl font-bold mb-2">Reclamaciones</h4>
-                      <p className="text-muted-foreground">
-                        Representación en reclamaciones por denegación de pensiones, cálculos incorrectos o cualquier
-                        otra discrepancia con la Seguridad Social.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-
               {/* Process */}
               <div>
                 <h3 className="text-2xl font-bold mb-6">Nuestro Proceso</h3>
                 <div className="space-y-6">
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">1</span>
                     </div>
                     <div>
@@ -152,7 +93,7 @@ export default function JubilacionesPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">2</span>
                     </div>
                     <div>
@@ -164,7 +105,7 @@ export default function JubilacionesPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">3</span>
                     </div>
                     <div>
@@ -176,7 +117,7 @@ export default function JubilacionesPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">4</span>
                     </div>
                     <div>
@@ -188,7 +129,7 @@ export default function JubilacionesPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">5</span>
                     </div>
                     <div>
@@ -199,6 +140,61 @@ export default function JubilacionesPage() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              {/* Services List */}
+              <div>
+                <h3 className="text-2xl font-bold mb-6">¿Cómo Podemos Ayudarle?</h3>
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="w-12 h-12 rounded-full bg-[#433E3F]/10 flex items-center justify-center mb-4">
+                        <FileText className="h-6 w-6 text-[#433E3F]" />
+                      </div>
+                      <h4 className="text-xl font-bold mb-2">Jubilación Ordinaria</h4>
+                      <p className="text-muted-foreground">
+                        Asesoramiento completo para la solicitud de jubilación ordinaria, calculando la pensión óptima
+                        según su historial laboral.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="w-12 h-12 rounded-full bg-[#433E3F]/10 flex items-center justify-center mb-4">
+                        <FileText className="h-6 w-6 text-[#433E3F]" />
+                      </div>
+                      <h4 className="text-xl font-bold mb-2">Jubilación Anticipada</h4>
+                      <p className="text-muted-foreground">
+                        Análisis de su situación para determinar si puede acceder a la jubilación anticipada y en qué
+                        condiciones, minimizando las penalizaciones.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="w-12 h-12 rounded-full bg-[#433E3F]/10 flex items-center justify-center mb-4">
+                        <FileText className="h-6 w-6 text-[#433E3F]" />
+                      </div>
+                      <h4 className="text-xl font-bold mb-2">Pensiones de Viudedad</h4>
+                      <p className="text-muted-foreground">
+                        Tramitación de pensiones de viudedad, orfandad y en favor de familiares, asegurando el
+                        reconocimiento de todos sus derechos.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="w-12 h-12 rounded-full bg-[#433E3F]/10 flex items-center justify-center mb-4">
+                        <FileText className="h-6 w-6 text-[#433E3F]" />
+                      </div>
+                      <h4 className="text-xl font-bold mb-2">Reclamaciones</h4>
+                      <p className="text-muted-foreground">
+                        Representación en reclamaciones por denegación de pensiones, cálculos incorrectos o cualquier
+                        otra discrepancia con la Seguridad Social.
+                      </p>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
 
@@ -273,38 +269,7 @@ export default function JubilacionesPage() {
                     <Button asChild className="w-full">
                       <Link href="/contacto" className="flex items-center justify-center gap-2">
                         <Calendar className="h-4 w-4" />
-                        Solicitar Cita
-                      </Link>
-                    </Button>
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="w-full border-primary text-primary bg-white hover:bg-primary hover:text-white"
-                    >
-                      <Link
-                        href="https://wa.me/5493517410304"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="h-4 w-4"
-                        >
-                          <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
-                          <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-                          <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-                          <path d="M9.5 13.5c.5 1 1.5 1 2 1s1.5 0 2-1" />
-                        </svg>
-                        WhatsApp
+                        Solicitar Consulta Gratuita
                       </Link>
                     </Button>
                   </div>
@@ -317,23 +282,23 @@ export default function JubilacionesPage() {
                   <h3 className="text-xl font-bold mb-4">¿Por Qué Elegirnos?</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
-                      <ChevronRight className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <ChevronRight className="h-5 w-5 text-[#433E3F] flex-shrink-0 mt-0.5" />
                       <span>Especialistas en derecho de la seguridad social</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <ChevronRight className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <ChevronRight className="h-5 w-5 text-[#433E3F] flex-shrink-0 mt-0.5" />
                       <span>Cálculos precisos de su pensión en diferentes escenarios</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <ChevronRight className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <ChevronRight className="h-5 w-5 text-[#433E3F] flex-shrink-0 mt-0.5" />
                       <span>Alto porcentaje de éxito en reclamaciones</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <ChevronRight className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <ChevronRight className="h-5 w-5 text-[#433E3F] flex-shrink-0 mt-0.5" />
                       <span>Gestión integral de todos los trámites</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <ChevronRight className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <ChevronRight className="h-5 w-5 text-[#433E3F] flex-shrink-0 mt-0.5" />
                       <span>Honorarios transparentes sin sorpresas</span>
                     </li>
                   </ul>
@@ -357,7 +322,7 @@ export default function JubilacionesPage() {
                               height="16"
                               viewBox="0 0 24 24"
                               fill="currentColor"
-                              className="text-primary"
+                              className="text-yellow-600"
                             >
                               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                             </svg>
@@ -381,7 +346,7 @@ export default function JubilacionesPage() {
                               height="16"
                               viewBox="0 0 24 24"
                               fill="currentColor"
-                              className="text-primary"
+                              className="text-yellow-600"
                             >
                               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                             </svg>
@@ -417,16 +382,6 @@ export default function JubilacionesPage() {
               <Button asChild size="lg">
                 <Link href="/contacto">Solicitar Consulta Gratuita</Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-primary text-primary bg-white hover:bg-primary hover:text-white"
-              >
-                <Link href="https://wa.me/5493517410304" target="_blank" rel="noopener noreferrer">
-                  Contactar por WhatsApp
-                </Link>
-              </Button>
             </div>
           </div>
         </div>
@@ -434,4 +389,3 @@ export default function JubilacionesPage() {
     </div>
   )
 }
-
