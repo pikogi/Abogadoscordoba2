@@ -15,6 +15,22 @@ export const metadata = {
   title: "Abogados Cordoba",
   description: "Expertos en derecho civil, familia, previsional, laboral y societario",
   generator: "v0.dev",
+  openGraph: {
+    title: "Abogados Córdoba",
+    description: "Expertos en derecho civil, familia, previsional, laboral y societario",
+    url: "https://abogadoscba.com", // reemplazá con tu dominio real
+    siteName: "Abogados Córdoba",
+    images: [
+      {
+        url: "https://abogadoscba.com/images/og-image.jpg", // asegurate que la imagen exista
+        width: 1200,
+        height: 630,
+        alt: "Abogados Córdoba",
+      },
+    ],
+    locale: "es_AR",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
