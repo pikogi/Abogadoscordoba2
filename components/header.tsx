@@ -34,13 +34,13 @@ export function Header({ navLinks }: HeaderProps) {
   // Cuando se hace scroll, el header se vuelve fijo y blanco
   // Cuando no hay scroll, el header es parte del banner (transparente)
   const headerClasses = scrolled
-    ? "fixed top-0 left-0 right-0 z-50 bg-white border-b shadow-sm transition-all duration-300"
+    ? "fixed top-0 left-0 right-0 z-50 bg-[#212d4b] border-b shadow-sm transition-all duration-300"
     : "absolute top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300"
 
   return (
     <header className={headerClasses}>
       <div className="container flex h-16 items-center px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2 ms:ml-10 md:ml-20">
           <div className="h-40 w-auto relative">
             <Image
               src="/images/logoabogado.png"
@@ -56,15 +56,15 @@ export function Header({ navLinks }: HeaderProps) {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium hover:underline underline-offset-4 transition-colors ${
-                scrolled ? "text-foreground" : "text-white"
+              className={`text-base font-medium hover:underline underline-offset-4 transition-colors ${
+                scrolled ? "text-white" : "text-white"
               }`}
             >
               {link.label}
             </Link>
           ))}
         </nav>
-        <div className="ml-auto md:hidden">
+        <div className="ml-auto md:hidden text-white">
           <MobileMenu links={navLinks} />
         </div>
       </div>

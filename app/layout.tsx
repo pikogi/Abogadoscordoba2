@@ -38,12 +38,12 @@ export default function RootLayout({
           <div className="flex flex-col min-h-screen">
             <Header navLinks={navLinks} />
             <main className="flex-1">{children}</main>
-            <footer className="border-t py-6 md:py-0">
+            <footer className="border-t py-6 md:py-0 bg-[#212d4b] text-white">
               <div className="container px-4 md:px-6">
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 md:gap-12">
                   <div className="space-y-4 md:py-8">
                     <Link href="/" className="flex items-center gap-2">
-                      <div className="h-7 w-auto relative">
+                      <div className="h-40 w-auto relative">
                         <Image
                           src="/images/logoabogado.png"
                           alt="Logo Bufete Jurídico"
@@ -53,8 +53,8 @@ export default function RootLayout({
                         />
                       </div>
                     </Link>
-                    <p className="text-sm text-muted-foreground">
-                      Expertos en derecho civil, laboral y societario. Comprometidos con la excelencia y resultados para
+                    <p className="text-sm text-muted-foreground text-white">
+                    Comprometidos con la excelencia y resultados para
                       nuestros clientes.
                     </p>
                     <div className="flex gap-4">
@@ -78,19 +78,29 @@ export default function RootLayout({
                   </div>
                   <div className="space-y-4 md:py-8">
                     <h3 className="text-base font-medium">Áreas de Práctica</h3>
-                    <ul className="space-y-2 text-sm">
+                    <ul className="space-y-2 text-sm text-white">
                       <li>
-                        <Link href="/categorias/civil" className="text-muted-foreground hover:text-foreground">
+                      <Link href="/categorias/familia" className="text-muted-foreground hover:text-foreground text-white">
+                          Derecho Familia
+                        </Link>
+                        </li>
+                        <li>
+                        <Link href="/categorias/previsional" className="text-muted-foreground hover:text-foreground text-white">
+                          Derecho Previsional
+                        </Link>
+                        </li>
+                        <li>
+                        <Link href="/categorias/civil" className="text-muted-foreground hover:text-foreground text-white">
                           Derecho Civil
                         </Link>
                       </li>
                       <li>
-                        <Link href="/categorias/laboral" className="text-muted-foreground hover:text-foreground">
+                        <Link href="/categorias/laboral" className="text-muted-foreground hover:text-foreground text-white">
                           Derecho Laboral
                         </Link>
                       </li>
                       <li>
-                        <Link href="/categorias/societario" className="text-muted-foreground hover:text-foreground">
+                        <Link href="/categorias/societario" className="text-muted-foreground hover:text-foreground text-white">
                           Derecho Societario
                         </Link>
                       </li>
@@ -100,27 +110,12 @@ export default function RootLayout({
                     <h3 className="text-base font-medium">Enlaces Rápidos</h3>
                     <ul className="space-y-2 text-sm">
                       <li>
-                        <Link href="/" className="text-muted-foreground hover:text-foreground">
+                        <Link href="/" className="text-muted-foreground hover:text-foreground text-white">
                           Inicio
                         </Link>
                       </li>
                       <li>
-                        <Link href="/sobre-nosotros" className="text-muted-foreground hover:text-foreground">
-                          Sobre Nosotros
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/equipo" className="text-muted-foreground hover:text-foreground">
-                          Nuestro Equipo
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/blog" className="text-muted-foreground hover:text-foreground">
-                          Blog
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/contacto" className="text-muted-foreground hover:text-foreground">
+                        <Link href="/contacto" className="text-muted-foreground hover:text-foreground text-white">
                           Contacto
                         </Link>
                       </li>
@@ -129,13 +124,13 @@ export default function RootLayout({
                   <div className="space-y-4 md:py-8">
                     <h3 className="text-base font-medium">Contacto</h3>
                     <ul className="space-y-2 text-sm">
-                      <li className="text-muted-foreground">Ayacucho 127, Córdoba Capital.</li>
+                      <li className="text-muted-foreground text-white">Ayacucho 127, Córdoba Capital.</li>
                       <li>
                         <Link
                           href="https://wa.me/5493517410304"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-muted-foreground hover:text-foreground flex items-center gap-2"
+                          className="text-muted-foreground hover:text-foreground flex items-center gap-2 text-white"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -159,8 +154,8 @@ export default function RootLayout({
                       </li>
                       <li>
                         <Link
-                          href="mailto:info@bufetejuridico.com"
-                          className="text-muted-foreground hover:text-foreground"
+                          href="mailto:info@abogadoscba.com"
+                          className="text-muted-foreground hover:text-foreground text-white"
                         >
                           info@bufetejuridico.com
                         </Link>
@@ -168,7 +163,7 @@ export default function RootLayout({
                     </ul>
                   </div>
                 </div>
-                <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
+                <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground text-white">
                   <p>© {new Date().getFullYear()} Bufete Jurídico Profesional. Todos los derechos reservados.</p>
                 </div>
               </div>

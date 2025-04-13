@@ -16,9 +16,9 @@ export function Loader() {
   }, [])
 
   return (
-    <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white text-[#433E3F]">
+    <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#212d4b] text-[#433E3F]">
       <div className={cn("transition-all duration-700 transform", pulse ? "scale-110" : "scale-100")}>
-        <div className="relative h-48 w-48">
+        <div className="relative h-48 w-48 -translate-x-4">
           <Image
             src="/images/logoabogado.png" // Tu imagen personalizada
             alt="Cargando..."
