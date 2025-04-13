@@ -12,8 +12,8 @@ import { PageLoader } from "@/components/page-loader"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Bufete Jurídico Profesional",
-  description: "Expertos en derecho civil, laboral y societario",
+  title: "Abogados Cordoba",
+  description: "Expertos en derecho civil, familia, previsional, laboral y societario",
   generator: "v0.dev",
 }
 
@@ -157,7 +157,7 @@ export default function RootLayout({
                           href="mailto:info@abogadoscba.com"
                           className="text-muted-foreground hover:text-foreground text-white"
                         >
-                          info@bufetejuridico.com
+                          info@abogadoscba.com
                         </Link>
                       </li>
                     </ul>
