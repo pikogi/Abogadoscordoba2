@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
@@ -16,9 +17,19 @@ interface SubcategoryCardProps {
   description: string
   image: string
   faqs: FAQ[]
+  consultUrl?: string // URL a la que redirigir cuando se hace clic en el botón
 }
 
-export function SubcategoryCard({ id, title, description, image, faqs }: SubcategoryCardProps) {
+export function SubcategoryCard({ id, title, description, image, faqs, consultUrl }: SubcategoryCardProps) {
+  const router = useRouter()
+
+  const handleConsultClick = () => {
+    // Si se proporciona una URL, navegar a ella
+    if (consultUrl) {
+      router.push(consultUrl)
+    }
+  }
+
   return (
     <div id={id} className="scroll-mt-20">
       <Card className="overflow-hidden w-full">
@@ -45,7 +56,9 @@ export function SubcategoryCard({ id, title, description, image, faqs }: Subcate
             </div>
 
             <div className="mt-6">
-              <Button className="w-full">Consultar sobre {title}</Button>
+              <Button className="w-full" onClick={handleConsultClick}>
+                Consultar sobre {title}
+              </Button>
             </div>
           </CardContent>
         </div>
@@ -53,4 +66,3 @@ export function SubcategoryCard({ id, title, description, image, faqs }: Subcate
     </div>
   )
 }
-

@@ -8,9 +8,10 @@ export default function FamiliaLawPage() {
   const subcategories = [
     {
       id: "divorcios",
+      url: "/servicios/familia/divorcio",
       title: "Divorcios",
       description: "Asesoramiento legal en procesos de divorcio, separación de bienes y custodia de hijos.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/images/divorcio2.jpg?height=200&width=300",
       faqs: [
         {
           question: "¿Cuánto tiempo toma un proceso de divorcio?",
@@ -32,8 +33,9 @@ export default function FamiliaLawPage() {
     {
       id: "Cuota Alimentaria",
       title: "Cuota Alimentaria",
+      url: "/servicios/familia/cuota-alimentaria",
       description: "Gestión de testamentos, sucesiones y distribución de bienes tras el fallecimiento.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/images/cuotaalimentaria.jpg?height=200&width=300",
       faqs: [
         {
           question: "¿Qué ocurre si alguien fallece sin testamento?",
@@ -55,8 +57,9 @@ export default function FamiliaLawPage() {
     {
       id: "Regimen de Comunicacion",
       title: "Régimen de Comunicación",
+      url: "/servicios/familia/regimen-de-comunicacion",
       description: "Redacción, revisión y negociación de contratos entre particulares.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/images/regimen1.jpg?height=200&width=300",
       faqs: [
         {
           question: "¿Qué elementos debe contener un contrato para ser válido?",
@@ -80,7 +83,7 @@ export default function FamiliaLawPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 bg-gradient-to-r from-primary/80 to-primary text-white">
+      <section className="w-full py-12 md:py-24 bg-[#212d4b] text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -122,6 +125,7 @@ export default function FamiliaLawPage() {
                 title={subcategory.title}
                 description={subcategory.description}
                 image={subcategory.image}
+                consultUrl={subcategory.url}
                 faqs={subcategory.faqs}
               />
             ))}

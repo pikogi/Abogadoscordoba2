@@ -111,8 +111,8 @@ function getSubcategoryLinks(icon: string): string[] {
     case "family":
       return [
         "/servicios/familia/divorcio",
-        "/servicios/familia/alimentos",
-        "/servicios/familia/visitas",
+        "/servicios/familia/cuota-alimentaria",
+        "/servicios/familia/regimen-de-comunicacion",
         "/servicios/familia/adopcion",
       ]
     case "pension":
