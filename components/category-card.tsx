@@ -43,7 +43,7 @@ export function CategoryCard({ title, description, href, icon }: CategoryCardPro
         </ul>
       </CardContent>
       <CardFooter>
-        <Button asChild className="w-full">
+        <Button asChild className="w-full bg-[#212d4b]">
           <Link href={href}>Ver Todos los Servicios</Link>
         </Button>
       </CardFooter>
@@ -89,9 +89,9 @@ function getSubcategoryLinks(icon: string): string[] {
   switch (icon) {
     case "scale":
       return [
-        "/servicios/civil/accidentes",
-        "/servicios/civil/herencias",
-        "/servicios/civil/contratos",
+        "/servicios/civil/accidente",
+        "/servicios/civil/herencia",
+        "/servicios/civil/contrato",
         "/servicios/civil/cobranzas",
       ]
     case "briefcase":

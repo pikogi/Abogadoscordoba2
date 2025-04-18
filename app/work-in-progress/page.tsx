@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
-export default function NotFound() {
+export default function WorkInProgressPage() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-background p-4">
       <div className="max-w-md w-full text-center space-y-8">
@@ -25,5 +25,4 @@ export default function NotFound() {
       </div>
     </div>
   )
-}
-
+} 

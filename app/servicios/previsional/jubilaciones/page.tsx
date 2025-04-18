@@ -39,9 +39,9 @@ export default function JubilacionesPage() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-[#433E3F] text-[#433E3F] bg-white hover:bg-green-500 hover:text-white"
+                className="border-[#433E3F] text-[#433E3F] hover:bg-green-500 hover:text-white"
               >
-                <Link href="https://wa.me/5493517410304" target="_blank" rel="noopener noreferrer">
+                <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20Jubilación." target="_blank" rel="noopener noreferrer">
                 <Calendar className="h-4 w-4" />
                   Contactar por WhatsApp
                 </Link>
@@ -81,7 +81,7 @@ export default function JubilacionesPage() {
                 <h3 className="text-2xl font-bold mb-6">Nuestro Proceso</h3>
                 <div className="space-y-6">
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#212d4b] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">1</span>
                     </div>
                     <div>
@@ -93,7 +93,7 @@ export default function JubilacionesPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#212d4b] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">2</span>
                     </div>
                     <div>
@@ -105,7 +105,7 @@ export default function JubilacionesPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#212d4b] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">3</span>
                     </div>
                     <div>
@@ -117,7 +117,7 @@ export default function JubilacionesPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#212d4b] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">4</span>
                     </div>
                     <div>
@@ -129,7 +129,7 @@ export default function JubilacionesPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#433E3F] flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-[#212d4b] flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">5</span>
                     </div>
                     <div>
@@ -260,14 +260,14 @@ export default function JubilacionesPage() {
               {/* Contact Card */}
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-4">¿Necesita Asesoramiento sobre Jubilaciones?</h3>
+                  <h3 className="text-xl font-bold mb-4">¿Necesita asesoramiento sobre Jubilaciones?</h3>
                   <p className="text-muted-foreground mb-6">
                     Nuestros abogados especialistas están listos para ayudarle. Contáctenos hoy para una consulta
                     inicial sin compromiso.
                   </p>
                   <div className="space-y-4">
-                    <Button asChild className="w-full">
-                      <Link href="/contacto" className="flex items-center justify-center gap-2">
+                    <Button asChild className="w-full bg-[#212d4b]">
+                    <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20Jubilación." className="flex items-center justify-center gap-2">
                         <Calendar className="h-4 w-4" />
                         Solicitar Consulta Gratuita
                       </Link>
@@ -379,8 +379,8 @@ export default function JubilacionesPage() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <Button asChild size="lg">
-                <Link href="/contacto">Solicitar Consulta Gratuita</Link>
+              <Button asChild size="lg"className="bg-[#212d4b]">
+              <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20Jubilación.">Solicitar Consulta Gratuita</Link>
               </Button>
             </div>
           </div>

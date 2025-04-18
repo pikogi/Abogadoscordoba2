@@ -38,8 +38,8 @@ export default function Home() {
             <Button asChild size="lg" className="bg-white text-[#433E3F] hover:bg-white/60">
             <Link href="#categories">Nuestros Servicios</Link>
             </Button>
-            <Button asChild size="lg" className="bg-white text-[#433E3F] hover:bg-white/60">
-             <Link href="https://wa.me/5493517410304" target="_blank" rel="noopener noreferrer">
+            <Button asChild size="lg" className="bg-white text-[#433E3F] hover:bg-green-500 hover:text-white">
+             <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer">
               Contactar por WhatsApp
             </Link>
             </Button>
@@ -63,13 +63,13 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 w-full max-w-5xl">
-            <CategoryCard
+              <CategoryCard
                 title="Derecho Previsional"
                 description="Jubilaciones y pensiones."
                 href="/categorias/previsional"
                 icon="pension"
               />
-            <CategoryCard
+              <CategoryCard
                 title="Derecho Familia"
                 description="Divorcio, Cuota alimentaria, Régimen de comunicación."
                 href="/categorias/familia"
@@ -78,21 +78,26 @@ export default function Home() {
               <CategoryCard
                 title="Derecho Civil"
                 description="Accidentes de tránsito, declaratorias de herederos, contratos y más"
-                href="/categorias/civil"
+                href="/work-in-progress"
                 icon="scale"
               />
-              <CategoryCard
-                title="Derecho Laboral"
-                description="Relaciones laborales, despidos, compensaciones."
-                href="/categorias/laboral"
-                icon="briefcase"
-              />
-              <CategoryCard
-                title="Derecho Societario"
-                description="Constitución de sociedades, fusiones, adquisiciones."
-                href="/categorias/societario"
-                icon="building"
-              />
+            </div>
+            
+            <div className="flex justify-center mt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
+                <CategoryCard
+                  title="Derecho Laboral"
+                  description="Relaciones laborales, despidos, compensaciones."
+                  href="/work-in-progress"
+                  icon="briefcase"
+                />
+                <CategoryCard
+                  title="Derecho Societario"
+                  description="Constitución de sociedades, fusiones, adquisiciones."
+                  href="/categorias/societario"
+                  icon="building"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -110,7 +115,7 @@ export default function Home() {
                 Nuestro equipo de abogados expertos está listo para ayudarle. Contáctenos hoy para una consulta inicial.
               </p>
             </div>
-            <Button asChild size="lg" className="mt-4">
+            <Button asChild size="lg" className="mt-4 bg-[#212d4b]">
               <Link href="/contacto" className="flex items-center gap-2">
                 Solicitar Consulta <ArrowRight className="h-4 w-4" />
               </Link>
