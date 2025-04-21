@@ -38,19 +38,19 @@ export default function FamiliaLawPage() {
       image: "/images/cuotaalimentaria.jpg?height=200&width=300",
       faqs: [
         {
-          question: "¿Qué ocurre si alguien fallece sin testamento?",
-          answer:
-            "Se aplica la sucesión intestada, donde la ley determina quiénes son los herederos y en qué proporción recibirán los bienes según el orden de parentesco.",
+          question: "¿Quién puede solicitar una cuota alimentaria?",
+          answer: 
+            "El progenitor que convive con el menor, o en su representación un abogado, puede solicitarla. También puede hacerlo un tutor legal.",
         },
         {
-          question: "¿Cuánto tiempo tengo para reclamar una herencia?",
+          question: "¿Qué gastos cubre la cuota alimentaria?",
           answer:
-            "El plazo para aceptar o renunciar a una herencia generalmente es de 10 años, aunque puede variar según la jurisdicción.",
+            "Incluye alimentación, vivienda, vestimenta, educación, salud, actividades extracurriculares y otros gastos esenciales del menor.",
         },
         {
-          question: "¿Puedo impugnar un testamento?",
+          question: "¿Cómo se determina el monto?",
           answer:
-            "Sí, un testamento puede impugnarse por causas como vicios de forma, incapacidad del testador, coacción o fraude, dentro de los plazos legales establecidos.",
+            "Se evalúa la necesidad del niño y la capacidad económica del progenitor obligado a pagar. No hay un porcentaje fijo, pero suele oscilar entre el 20% y el 30% de los ingresos.",
         },
       ],
     },
@@ -62,19 +62,19 @@ export default function FamiliaLawPage() {
       image: "/images/regimen1.jpg?height=200&width=300",
       faqs: [
         {
-          question: "¿Qué elementos debe contener un contrato para ser válido?",
+          question: "¿Qué es el régimen comunicacional?",
           answer:
-            "Un contrato válido debe tener consentimiento de las partes, objeto lícito, causa lícita y, en algunos casos, formalidades específicas como escritura pública.",
+            "Es el derecho del progenitor que no convive con el menor (y otros familiares cercanos) a mantener contacto regular y significativo con él.",
         },
         {
-          question: "¿Puedo rescindir un contrato unilateralmente?",
+          question: "¿Quién lo establece?",
           answer:
-            "Generalmente no, salvo que el contrato lo permita expresamente o existan causas legales como incumplimiento de la otra parte o vicios en el consentimiento.",
+            "Puede establecerse por acuerdo entre los padres o, en caso de conflicto, lo fija un juez con base en lo que más convenga al menor.",
         },
         {
-          question: "¿Es necesario que un abogado redacte mis contratos?",
+          question: "¿Qué pasa si el otro progenitor impide el contacto?",
           answer:
-            "Aunque no es obligatorio, es altamente recomendable para asegurar que el contrato cumpla con la legislación vigente y proteja adecuadamente sus intereses.",
+            "Se puede denunciar judicialmente el impedimento de contacto y solicitar medidas urgentes para restablecer el vínculo.",
         },
       ],
     },
@@ -83,21 +83,14 @@ export default function FamiliaLawPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 bg-[#212d4b] text-white">
+      <section className="w-full py-24 md:py-24 bg-[#212d4b] text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="flex items-center justify-center gap-2 text-sm mb-4">
-                <Link href="/" className="hover:underline">
-                  Inicio
-                </Link>
-                <ChevronRight className="h-4 w-4" />
-                <span>Derecho Familia</span>
-              </div>
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Derecho Familia</h1>
               <p className="mx-auto max-w-[700px] text-lg md:text-xl text-white/90">
                 Nuestro equipo de abogados especialistas en derecho Familia le brindará el asesoramiento legal que
-                necesita para resolver sus asuntos personales y familiares.
+                necesita.
               </p>
             </div>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
@@ -129,30 +122,6 @@ export default function FamiliaLawPage() {
                 faqs={subcategory.faqs}
               />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="w-full py-12 md:py-24 bg-muted">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                ¿Necesita Asesoramiento en Derecho Familia?
-              </h2>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Nuestro equipo de abogados expertos está listo para ayudarle. Contáctenos hoy para una consulta inicial.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <Button asChild size="lg">
-                <Link href="/contacto">Solicitar Consulta</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="tel:+123456789">Llamar Ahora</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
