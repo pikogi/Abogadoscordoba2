@@ -41,7 +41,7 @@ export default function ContactPage() {
               </p>
                 <Button asChild className="w-full bg-[#212d4b]">
                   <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20general.">
-                    Enviar Consulta Gratuita
+                    Enviar Consulta
                   </Link>
                 </Button>
             </div>

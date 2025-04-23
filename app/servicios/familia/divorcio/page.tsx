@@ -255,7 +255,7 @@ export default function JubilacionesPage() {
                     <Button asChild className="w-full bg-[#212d4b]">
                       <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20un%20divorcio." className="flex items-center justify-center gap-2">
                         <Calendar className="h-4 w-4" />
-                        Solicitar Consulta Gratuita
+                        Solicitar Consulta
                       </Link>
                     </Button>
                   </div>
@@ -367,7 +367,7 @@ export default function JubilacionesPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Button asChild size="lg" className="bg-[#212d4b]">
-              <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%%20por%20un%20divorcio.">Solicitar Consulta Gratuita</Link>
+              <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%%20por%20un%20divorcio.">Solicitar Consulta</Link>
               </Button>
             </div>
           </div>

@@ -21,7 +21,7 @@ export default function FamiliaLawPage() {
         {
           question: "¿Qué documentos necesito para iniciar un divorcio?",
           answer:
-            "Generalmente se requiere el certificado de matrimonio, identificaciones, información sobre bienes comunes y, si hay hijos, sus certificados de nacimiento.",
+            "Se requiere el certificado de matrimonio, identificaciones, información sobre bienes comunes y, si hay hijos, sus certificados de nacimiento.",
         },
         {
           question: "¿Cómo se determina la custodia de los hijos?",
@@ -50,7 +50,7 @@ export default function FamiliaLawPage() {
         {
           question: "¿Cómo se determina el monto?",
           answer:
-            "Se evalúa la necesidad del niño y la capacidad económica del progenitor obligado a pagar. No hay un porcentaje fijo, pero suele oscilar entre el 20% y el 30% de los ingresos.",
+            "Se evalúa la necesidad del niño y la capacidad económica del progenitor obligado a pagar.",
         },
       ],
     },

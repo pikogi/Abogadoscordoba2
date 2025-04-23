@@ -105,22 +105,22 @@ export default function RootLayout({
                         </Link>
                         </li>
                         <li>
-                        <Link href="/categorias/previsional" className="text-muted-foreground hover:text-foreground text-white">
+                        <Link href="/categorias/previsiona" className="text-muted-foreground hover:text-foreground text-white">
                           Derecho Previsional
                         </Link>
                         </li>
                         <li>
-                        <Link href="/categorias/civil" className="text-muted-foreground hover:text-foreground text-white">
+                        <Link href="/categorias/civi" className="text-muted-foreground hover:text-foreground text-white">
                           Derecho Civil
                         </Link>
                       </li>
                       <li>
-                        <Link href="/categorias/laboral" className="text-muted-foreground hover:text-foreground text-white">
+                        <Link href="/categorias/labora" className="text-muted-foreground hover:text-foreground text-white">
                           Derecho Laboral
                         </Link>
                       </li>
                       <li>
-                        <Link href="/categorias/societario" className="text-muted-foreground hover:text-foreground text-white">
+                        <Link href="/categorias/societari" className="text-muted-foreground hover:text-foreground text-white">
                           Derecho Societario
                         </Link>
                       </li>

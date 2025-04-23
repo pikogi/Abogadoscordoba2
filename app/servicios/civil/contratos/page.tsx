@@ -419,7 +419,7 @@ export default function ContratosPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Button asChild size="lg">
-                <Link href="/contacto">Solicitar Consulta Gratuita</Link>
+                <Link href="/contacto">Solicitar Consulta</Link>
               </Button>
               <Button
                 asChild

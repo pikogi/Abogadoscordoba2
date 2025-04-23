@@ -138,61 +138,6 @@ export default function JubilacionesPage() {
                 </div>
               </div>
 
-              {/* Services List */}
-              <div>
-                <h3 className="text-2xl font-bold mb-6">¿Cómo Podemos Ayudarle?</h3>
-                <div className="grid gap-6 sm:grid-cols-2">
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-full bg-[#433E3F]/10 flex items-center justify-center mb-4">
-                        <FileText className="h-6 w-6 text-[#433E3F]" />
-                      </div>
-                      <h4 className="text-xl font-bold mb-2">Jubilación Ordinaria</h4>
-                      <p className="text-muted-foreground">
-                        Asesoramiento completo para la solicitud de jubilación ordinaria, calculando la pensión óptima
-                        según su historial laboral.
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-full bg-[#433E3F]/10 flex items-center justify-center mb-4">
-                        <FileText className="h-6 w-6 text-[#433E3F]" />
-                      </div>
-                      <h4 className="text-xl font-bold mb-2">Jubilación Anticipada</h4>
-                      <p className="text-muted-foreground">
-                        Análisis de su situación para determinar si puede acceder a la jubilación anticipada y en qué
-                        condiciones, minimizando las penalizaciones.
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-full bg-[#433E3F]/10 flex items-center justify-center mb-4">
-                        <FileText className="h-6 w-6 text-[#433E3F]" />
-                      </div>
-                      <h4 className="text-xl font-bold mb-2">Pensiones de Viudedad</h4>
-                      <p className="text-muted-foreground">
-                        Tramitación de pensiones de viudedad, orfandad y en favor de familiares, asegurando el
-                        reconocimiento de todos sus derechos.
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-full bg-[#433E3F]/10 flex items-center justify-center mb-4">
-                        <FileText className="h-6 w-6 text-[#433E3F]" />
-                      </div>
-                      <h4 className="text-xl font-bold mb-2">Reclamaciones</h4>
-                      <p className="text-muted-foreground">
-                        Representación en reclamaciones por denegación de pensiones, cálculos incorrectos o cualquier
-                        otra discrepancia con la Seguridad Social.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-
               {/* FAQs */}
               <div>
                 <h3 className="text-2xl font-bold mb-6">Preguntas Frecuentes</h3>
@@ -257,7 +202,7 @@ export default function JubilacionesPage() {
                     <Button asChild className="w-full bg-[#212d4b]">
                     <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20Régimen%20de%20Comuniación." className="flex items-center justify-center gap-2">
                         <Calendar className="h-4 w-4" />
-                        Solicitar Consulta Gratuita
+                        Solicitar Consulta
                       </Link>
                     </Button>
                   </div>
@@ -368,7 +313,7 @@ export default function JubilacionesPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Button asChild size="lg"className="bg-[#212d4b]">
-              <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20Régimen%20de%20Comuniación.">Solicitar Consulta Gratuita</Link>
+              <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20Régimen%20de%20Comuniación.">Solicitar Consulta</Link>
               </Button>
             </div>
           </div>

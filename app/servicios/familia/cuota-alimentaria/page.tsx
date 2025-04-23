@@ -166,7 +166,7 @@ export default function JubilacionesPage() {
                     ¿Cómo se determina el monto?
                     </AccordionTrigger>
                     <AccordionContent>
-                    Se evalúa la necesidad del niño y la capacidad económica del progenitor obligado a pagar. No hay un porcentaje fijo, pero suele oscilar entre el 20% y el 30% de los ingresos.
+                    Se evalúa la necesidad del niño y la capacidad económica del progenitor obligado a pagar. 
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="faq-4">
@@ -203,7 +203,7 @@ export default function JubilacionesPage() {
                     <Button asChild className="w-full bg-[#212d4b]">
                     <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20Cuota%20Alimentaria." className="flex items-center justify-center gap-2">
                         <Calendar className="h-4 w-4" />
-                        Solicitar Consulta Gratuita
+                        Solicitar Consulta
                       </Link>
                     </Button>
                   </div>
@@ -243,79 +243,36 @@ export default function JubilacionesPage() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4">Testimonios de Clientes</h3>
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     <div className="space-y-2">
-                      <div className="flex items-center space-x-1">
-                        {Array(5)
-                          .fill(0)
-                          .map((_, i) => (
-                            <svg
-                              key={i}
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              className="text-primary"
-                            >
-                              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                            </svg>
-                          ))}
-                      </div>
-                      <p className="text-sm italic text-muted-foreground">
-                        "Gracias a su profesionalidad y empatía, mi divorcio se resolvió de forma rápida y con un
-                        acuerdo justo para ambas partes. Altamente recomendable."
-                      </p>
-                      <p className="text-sm font-medium">María G.</p>
+                      <h4 className="font-medium">Testimonio 1 — Derecho Civil</h4>
+                      <blockquote className="text-sm text-muted-foreground">
+                        "El equipo de abogados resolvió mi caso con profesionalismo y dedicación. Me sentí acompañado en todo momento. Altamente recomendados."
+                      </blockquote>
+                      <p className="text-sm font-medium">– Cliente Satisfecho 1</p>
+                      <p className="text-xs text-muted-foreground">Caso de Derecho Civil</p>
                     </div>
+                    
                     <div className="space-y-2">
-                      <div className="flex items-center space-x-1">
-                        {Array(5)
-                          .fill(0)
-                          .map((_, i) => (
-                            <svg
-                              key={i}
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              className="text-primary"
-                            >
-                              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                            </svg>
-                          ))}
-                      </div>
-                      <p className="text-sm italic text-muted-foreground">
-                        "En un momento tan difícil, contar con abogados que realmente se preocupan por tu caso marca la
-                        diferencia. Consiguieron la custodia compartida que tanto deseaba."
-                      </p>
-                      <p className="text-sm font-medium">Carlos R.</p>
+                      <h4 className="font-medium">Testimonio 2 — Derecho Laboral</h4>
+                      <blockquote className="text-sm text-muted-foreground">
+                        "Me asesoraron de forma clara y eficaz. Gracias a su trabajo, pude obtener una resolución favorable en un conflicto laboral complicado."
+                      </blockquote>
+                      <p className="text-sm font-medium">– Cliente Satisfecho 2</p>
+                      <p className="text-xs text-muted-foreground">Caso de Derecho Laboral</p>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <h4 className="font-medium">Testimonio 3 — Derecho de Familia</h4>
+                      <blockquote className="text-sm text-muted-foreground">
+                        "Afrontar un tema familiar no es fácil, pero su apoyo legal y humano hizo toda la diferencia. Muy agradecida por su compromiso."
+                      </blockquote>
+                      <p className="text-sm font-medium">– Cliente Satisfecha 3</p>
+                      <p className="text-xs text-muted-foreground">Caso de Derecho de Familia</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="w-full py-12 md:py-24 bg-muted">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                Comience su Proceso de Divorcio con Asesoramiento Experto
-              </h2>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Nuestro equipo de abogados especializados está listo para guiarle en cada paso del camino.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <Button asChild size="lg"className="bg-[#212d4b]">
-              <Link href="https://wa.me/5493517410304?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20Cuota%20Alimentaria.">Solicitar Consulta Gratuita</Link>
-              </Button>
             </div>
           </div>
         </div>

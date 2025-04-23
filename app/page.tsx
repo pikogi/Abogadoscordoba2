@@ -31,7 +31,7 @@ export default function Home() {
                 ABOGADOS CORDOBA
               </h1>
               <p className="mx-auto max-w-[700px] text-lg md:text-xl text-white/90">
-                Expertos en derecho previsional, civil, laboral, Familia y societario.
+                Expertos en derecho previsional, civil, laboral, familia y societario.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row mt-12 sm:space-x-6 space-y-4 sm:space-y-0 sm:pt-8">
@@ -66,7 +66,7 @@ export default function Home() {
               <CategoryCard
                 title="Derecho Previsional"
                 description="Jubilaciones y pensiones."
-                href="/categorias/previsional"
+                href="/categorias/previsiona"
                 icon="pension"
               />
               <CategoryCard
@@ -94,7 +94,7 @@ export default function Home() {
                 <CategoryCard
                   title="Derecho Societario"
                   description="Constitución de sociedades, fusiones, adquisiciones."
-                  href="/categorias/societario"
+                  href="/categorias/societari"
                   icon="building"
                 />
               </div>
@@ -136,34 +136,86 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 w-full">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="flex flex-col p-6 bg-background rounded-lg shadow-sm w-full">
-                  <div className="flex items-center space-x-2 mb-4">
-                    {Array(5)
-                      .fill(0)
-                      .map((_, j) => (
-                        <svg
-                          key={j}
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          className="text-yellow-600 h-5 w-5"
-                        >
-                          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                      ))}
-                  </div>
-                  <p className="italic mb-4 text-[#433E3F]">
-                    "El equipo de abogados resolvió mi caso con profesionalismo y dedicación. Altamente recomendados."
-                  </p>
-                  <div className="mt-auto">
-                    <p className="font-semibold text-[#433E3F]">Cliente Satisfecho {i}</p>
-                    <p className="text-sm text-yellow-600">Caso de Derecho Civil</p>
-                  </div>
+              <div className="flex flex-col p-6 bg-background rounded-lg shadow-sm w-full">
+                <div className="flex items-center space-x-2 mb-4">
+                  {Array(5)
+                    .fill(0)
+                    .map((_, j) => (
+                      <svg
+                        key={j}
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="text-yellow-600 h-5 w-5"
+                      >
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                    ))}
                 </div>
-              ))}
+                <p className="italic mb-4 text-[#433E3F]">
+                  "El equipo de abogados resolvió mi caso con profesionalismo y dedicación. Me sentí acompañado en todo momento. Altamente recomendados."
+                </p>
+                <div className="mt-auto">
+                  <p className="font-semibold text-[#433E3F]">Leandro C.</p>
+                  <p className="text-sm text-yellow-600">Caso de Derecho Civil</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col p-6 bg-background rounded-lg shadow-sm w-full">
+                <div className="flex items-center space-x-2 mb-4">
+                  {Array(5)
+                    .fill(0)
+                    .map((_, j) => (
+                      <svg
+                        key={j}
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="text-yellow-600 h-5 w-5"
+                      >
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                    ))}
+                </div>
+                <p className="italic mb-4 text-[#433E3F]">
+                  "Me asesoraron de forma clara y eficaz. Gracias a su trabajo, pude obtener una resolución favorable en un conflicto laboral complicado."
+                </p>
+                <div className="mt-auto">
+                  <p className="font-semibold text-[#433E3F]">Facundo B.</p>
+                  <p className="text-sm text-yellow-600">Caso de Derecho Laboral</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col p-6 bg-background rounded-lg shadow-sm w-full">
+                <div className="flex items-center space-x-2 mb-4">
+                  {Array(5)
+                    .fill(0)
+                    .map((_, j) => (
+                      <svg
+                        key={j}
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="text-yellow-600 h-5 w-5"
+                      >
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                    ))}
+                </div>
+                <p className="italic mb-4 text-[#433E3F]">
+                  "Afrontar un tema familiar no es fácil, pero su apoyo legal y humano hizo toda la diferencia. Muy agradecida por su compromiso."
+                </p>
+                <div className="mt-auto">
+                  <p className="font-semibold text-[#433E3F]">Constanza M.</p>
+                  <p className="text-sm text-yellow-600">Caso de Derecho de Familia</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

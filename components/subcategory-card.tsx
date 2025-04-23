@@ -57,7 +57,7 @@ export function SubcategoryCard({ id, title, description, image, faqs, consultUr
 
             <div className="mt-6">
               <Button className="w-full" onClick={handleConsultClick}>
-                Consultar sobre {title}
+                Ver más sobre {title}
               </Button>
             </div>
           </CardContent>

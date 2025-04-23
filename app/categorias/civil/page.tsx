@@ -20,7 +20,7 @@ export default function CivilLawPage() {
         {
           question: "¿Qué documentos necesito para iniciar un divorcio?",
           answer:
-            "Generalmente se requiere el certificado de matrimonio, identificaciones, información sobre bienes comunes y, si hay hijos, sus certificados de nacimiento.",
+            "Se requiere el certificado de matrimonio, identificaciones, información sobre bienes comunes y, si hay hijos, sus certificados de nacimiento.",
         },
         {
           question: "¿Cómo se determina la custodia de los hijos?",
