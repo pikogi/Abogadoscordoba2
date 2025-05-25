@@ -8,6 +8,7 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { PageLoader } from "@/components/page-loader"
+import { GoogleTagManager, GoogleTagManagerNoScript } from './components/GoogleTagManager'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -51,8 +52,10 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
+        <GoogleTagManager gtmId="GTM-MX2ZC674" />
       </head>
       <body className={inter.className}>
+        <GoogleTagManagerNoScript gtmId="GTM-MX2ZC674" />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
         <PageLoader>
           <div className="flex flex-col min-h-screen">

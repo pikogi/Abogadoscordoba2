@@ -5,10 +5,13 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { CategoryCard } from "@/components/category-card"
 import { ScrollIndicator } from "@/components/scroll-indicator"
+import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/GoogleTagManager"
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      <GoogleTagManager gtmId="GTM-XXXXXXX" />
+      <GoogleTagManagerNoScript gtmId="GTM-XXXXXXX" />
       {/* 
         Hero Section con header integrado dentro del banner
       */}
